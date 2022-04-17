@@ -1,0 +1,22 @@
+#upper {
+  padding-right: 1rem;
+  padding-top: 1rem;
+  text-align: right;
+}
+
+body {
+  background: linear-gradient(to right, #00abc6, #d8016de5);
+}
+
+#detailsInputs {
+  text-align: center;
+  padding: 8px;
+  margin: auto;
+}
+
+#footer {
+  font-size: large;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+
+  text-align: center;
+}
