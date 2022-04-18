@@ -2,107 +2,75 @@
 <html lang="en">
 
 <head>
-  <title>My To Do List</title>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="../css/index.css" rel="stylesheet">
+  <title>Awesome To-Do List HTML,CSS & JavaScript</title>
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/index.css">
 </head>
 
 <body>
 
 
-  <img class="logo" src="../images/logo.png" alt="" srcset="" width="70px">
-  <div id="upper">
-    <button onclick="document.location='login.html'">login</button>
-    <button onclick="document.location='about.html'">about us</button>
-    <button onclick="document.location='arabic.html'">العربية</button>
-  </div>
-
-
-  <header>
-    <h1>My ToDo list</h1>
+  <header class="navbar">
+    <h1 class="logo">
+      <a href="index.html">
+        <img src="../images/logo.png" alt="" srcset="" width="150">
+      </a>
+    </h1>
+    <nav>
+      <ul>
+        <li> <a href="index.html">Home</a></li>
+        <li> <a href="about.html">About Us</a> </li>
+      </ul>
+    </nav>
   </header>
 
-  <main class="main">
-    <section class="formContaner">
-      <form id="newTaskForm">
-        <div>
-          <table id="inputs">
+  <div class="container">
+    <div class="addTask">
+      <input type="text" placeholder="Add a Task">
+      <button>Add</button>
+    </div>
 
-            <tr>
-              <th><label for="newTaskInput">Input Your Task 🤗 </label></th>
-            </tr>
+    <ol class="notCompleted">
+      <h3>Not Finished</h3>
+      <!-- <div class="notCompletedTask">
+        <input type="text" placeholder="Add a Task" readonly>
+        <button><i class="fa fa-trash"></i></button>
+        <button><i class="fa fa-check"></i></button>
+      </div> -->
+    </ol>
 
-            <tr>
-              <td><input type="text" id="newTaskInput" placeholder="What is your planner...?"></td>
-            </tr>
-
-            <tr>
-              <td><label for="newTaskDate">The Date Is ...</label></td>
-            </tr>
-
-            <tr>
-              <td><input type="date" id="newTaskDate"></td>
-            </tr>
-
-            <tr>
-              <td><label for="interestTask">Urgency Task</label></td>
-            </tr>
-
-            <tr>
-              <td>
-                <select id="UrgencyTask">
-                  <option value="low">Low</option>
-                  <option value="medium">Medium</option>
-                  <option value="high">High</option>
-                </select>
-              </td>
-            </tr>
-
-            <td>
-              <input type="submit" id="newTaskSubmit" value="Submit">
-            </td>
-
-          </table>
-        </div>
-      </form>
-    </section>
-
-    <hr>
-
-    <section class="taskList">
-      <h2>Tasks Table</h2>
-
-      <div class="content">
-        <table id="myTable">
-          <tbody>
-            <th>Task </th>
-            <th>Date</th>
-            <th>Urgency </th>
-            <th>Done</th>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="clearAll">
-        <button id="onClick" onclick="clearAllTasks()">Clear all Tasks</button>
-      </div>
-    </section>
-  </main>
-
-  <hr>
+    <ol class="Completed">
+      <h3>Finished</h3>
+      <!-- <div class="CompletedTask">
+        <input type="text" placeholder="Add a Task" readonly>
+        <button><i class="fa fa-trash"></i></button>
+      </div> -->
+    </ol>
+  </div>
 
   <footer>
-    <table id="footer">
-      <tbody>
-        <td>
-          <tr>© Copyright |</tr>
-          <tr>☎ 0799123681 |</tr>
-          <tr>✉ mr.yasein@gmail.com |</tr>
-          <tr>Ⓕ facebook/yasein.com </tr>
-        </td>
-      </tbody>
-    </table>
+    <div class="footer-content">
+      <a href="index.html">
+        <img src="../images/logo.png" alt="" srcset="" width="115">
+      </a>
+
+      <p>The daily task list has been improved. It can simplify things for production or completion of tasks.</p>
+
+      <ul class="social">
+        <li><a class="fa fa-facebook" href="facebook.com"></a></li>
+        <li> <a class="fa fa-whatsapp" href="whatsapp.com"></a></li>
+        <li><a class="fa fa-youtube" href="youtube.com"></a></li>
+        <li><a class="fa fa-linkedin" href="linkedin.com"></a></li>
+        <li><a class="fa fa-twitter" href="twitter.com"></a></li>
+      </ul>
+    </div>
+
+    <div class="footer-bottom">
+      <i class="fa fa-copyright">Copyright 1999-2022 by Refines Data. All Rights Reserved.
+        <i>TodoList.com</i> is Powered by <b>Yasein's Company</b>.
+      </i>
+    </div>
   </footer>
 
   <script src="../js/app.js"></script>

@@ -6,93 +6,116 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <link href="../css/about.css" rel="stylesheet">
-
 </head>
 
 <body>
-  <img class="logo" src="../images/7205.png" alt="" srcset="" width="70px">
+  <header class="navbar">
+    <h1 class="logo">
+      <a href="index.html">
+        <img src="../images/logo.png" alt="" srcset="" width="150">
+      </a>
+    </h1>
+    <nav>
+      <ul>
+        <li> <a href="index.html">Home</a></li>
+        <li> <a href="about.html">About Us</a> </li>
+      </ul>
+    </nav>
+  </header>
 
-  <div id="upper">
-    <button onclick="document.location='login.html'">login</button>
-    <button onclick="document.location='index.html'">home</button>
-    <button onclick="document.location='arabic.html'">العربية</button>
+  <div>
+
+    <table class="cv">
+      <tr>
+        <td><img src="../images/Me.jpg" class="cvImage" width="200px" srcset="" alt="Yasein's Profile Picture"></td>
+        <td>
+          <h2>Yasein Burqan</h2>
+          <p><em><strong>Web designer, programmer and web developer </strong></em></p>
+          <p>I am a programmer, I ❤ coffee and my job</p>
+        </td>
+      </tr>
+    </table>
   </div>
 
-  <section>
-    <img id="caption" src="../images/todoListCaption.png" alt="" srcset="">
-
+  <div class="description">
     <p>
-      <strong>description </strong>
+      <strong>description </strong><br>
+      daily to-do listStay organized with this accessible
+      daily to-do list template. On the one hand,you can list important events, special occasions,
+      and holidays in one list, and on the other hand,you can rely on your daily to-do list to ensure
+      the smooth running of work. Type a date in the box to mark the tasks that need to be done on that day.
     </p>
-
-    <p>
-      daily to-do list
-      Stay organized with this accessible
-      daily to-do list template. On the one hand,
-      you can list important events, special occasions,
-      and holidays in one list, and on the other hand,
-      you can rely on your daily to-do list to ensure
-      the smooth running of work. Type a date in the
-      box to mark the tasks that need to be done on that day.
-    </p>
-  </section>
+  </div>
 
   <hr>
 
-  <section>
-    <main class="aboutMain">
-      <form id="aboutTask">
-        <div>
-          <table id="detailsInputs">
+  <h3>Contact Me</h3>
 
-            <tr>
-              <th><label for="nameInput">Input Your Name 🤗 </label></th>
-            </tr>
+  <main class="aboutMain">
+    <form id="aboutTask">
+      <div>
+        <table id="detailsInputs">
+          <tr>
+            <th><label for="nameInput"><span> Input Your Name 🤗</span></label></th>
+          </tr>
+          <tr>
+            <td><input type="text" id="emailInput" placeholder="Your Name"></td>
+          </tr>
 
-            <tr>
-              <td><input type="text" id="emailInput" placeholder="What is your name...?"></td>
-            </tr>
+          <tr>
+            <td><label for="newTaskDate"><span> Email</span></label></td>
+          </tr>
+          <tr>
+            <td><input type="email" id="email" placeholder="email"></td>
+          </tr>
 
-            <tr>
-              <td><label for="newTaskDate">Email</label></td>
-            </tr>
+          <tr>
+            <td><label for="phone"><span> Your Mobile Number</span></label></td>
+          </tr>
+          <tr>
+            <td><input type="text" id="phone" placeholder="Your Mobile Number"></td>
+          </tr>
 
-            <tr>
-              <td><input type="email" id="email"></td>
-            </tr>
+          <tr>
+            <td><label for="interestTask"><span>Your Message</span></label></td>
+          </tr>
+          <tr>
+            <td><input type="text" id="message" placeholder="Your Message"></td>
+          </tr>
 
-            <tr>
-              <td><label for="interestTask">Your Message</label></td>
-            </tr>
-
-            <tr>
-              <td><input type="text" id="message"></td>
-            </tr>
-
-            <td>
-              <input type="submit" id="sendEmail" value="Send Email">
-            </td>
-
-          </table>
-        </div>
-      </form>
-    </main>
-  </section>
+          <td><input type="submit" id="sendEmail" value="Send Email"></td>
+        </table>
+      </div>
+    </form>
+  </main>
 
   <footer>
-    <table id="footer">
-      <tbody>
-        <td>
-          <tr>© Copyright |</tr>
-          <tr>☎ 0799123681 |</tr>
-          <tr>✉ mr.yasein@gmail.com |</tr>
-          <tr>Ⓕ facebook/yasein.com </tr>
-        </td>
-      </tbody>
-    </table>
+    <div class="footer-content">
+      <a href="index.html">
+        <img src="../images/logo.png" alt="" srcset="" width="115">
+      </a>
+
+      <p>The daily task list has been improved. It can simplify things for production or completion of tasks.</p>
+
+      <ul class="social">
+        <li><a class="fa fa-facebook" href="facebook.com"></a></li>
+        <li> <a class="fa fa-whatsapp" href="whatsapp.com"></a></li>
+        <li><a class="fa fa-youtube" href="youtube.com"></a></li>
+        <li><a class="fa fa-linkedin" href="linkedin.com"></a></li>
+        <li><a class="fa fa-twitter" href="twitter.com"></a></li>
+      </ul>
+    </div>
+
+    <div class="footer-bottom">
+      <i class="fa fa-copyright">Copyright 1999-2022 by Refines Data. All Rights Reserved.
+        <i>TodoList.com</i> is Powered by <b>Yasein's Company</b>.
+      </i>
+    </div>
   </footer>
 
+  <script src="../js/app.js"></script>
 </body>
 
 </html>
