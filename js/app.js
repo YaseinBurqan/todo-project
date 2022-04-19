@@ -42,6 +42,8 @@ switch (welcomeAlert) {
     break;
 }
 
+let dailyArray = [];
+
 let coffee = prompt("Do you want some Coffee?").toLowerCase();
 console.log(coffee);
 if (coffee === "") {
@@ -49,6 +51,7 @@ if (coffee === "") {
 } else if (coffee.toLocaleLowerCase === "yes") {
   alert("Your Coffee In The Way " + gender + " " + name + "🎼");
 }
+dailyArray.push(coffee);
 
 let happy = prompt("Are you happy today?").toLowerCase();
 console.log(happy);
@@ -57,6 +60,7 @@ if (happy === "") {
 } else if (happy === "yes") {
   alert("It's Wonderful Day 🌻 ");
 }
+dailyArray.push(happy);
 
 let meeting = prompt("Receiving interviews and meetings?").toLowerCase();
 console.log(meeting);
@@ -65,6 +69,6 @@ if (meeting === "") {
 } else if (meeting === "yes") {
   alert("A beautiful day with a beautiful start ✌ ");
 }
+dailyArray.push(meeting);
 
-let dailyArray = [coffee, happy, meeting];
 alert(dailyArray);
