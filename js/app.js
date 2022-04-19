@@ -20,7 +20,9 @@ switch (gender) {
 var age = prompt("Age");
 
 if (age <= 0) {
-  alert("Wrong Input ...! " + "The Age Can Not Be " + age);
+  alert("Wrong Input ...! ");
+  alert("The Age Can Not Be " + age);
+  age;
 }
 
 var welcomeAlert = confirm("Do You Wants To Continue The Welcoming Message..?");
