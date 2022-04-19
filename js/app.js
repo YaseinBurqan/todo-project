@@ -1,4 +1,4 @@
-function welcomeMethod() {
+/* function welcomeMethod() {
   alert("Hello! I am an alert box!");
 
   let name = prompt("Inter Your Name");
@@ -44,12 +44,12 @@ function welcomeMethod() {
   }
 }
 welcomeMethod();
-
+ */
 function ifCoffee() {
   let coffee = prompt("Do you want some Coffee?").toLowerCase();
   console.log(coffee);
   if (coffee === "yes") {
-    alert("Your Coffee In The Way " + welcomeMethod.gender + " " + welcomeMethod.name + "🎼 ");
+    alert("Your Coffee In The Way 🎼 ");
   } else if (coffee === "no") {
     alert("زي ما بدك");
   } else {
@@ -90,4 +90,10 @@ arr.push(ifCoffee());
 arr.push(ifHappy());
 arr.push(ifMeeting());
 alert(arr);
+
+for (let index = 0; index < arr.length; index++) {
+  //  const element = array[index];
+  console.log(arr[index]);
+}
+
 console.log(arr);
