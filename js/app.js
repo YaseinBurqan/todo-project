@@ -1,4 +1,4 @@
-alert("Hello! I am an alert box!");
+/* alert("Hello! I am an alert box!");
 
 var name = prompt("Inter Your Name");
 
@@ -34,3 +34,4 @@ switch (welcomeAlert) {
   case false:
     break;
 }
+ */
